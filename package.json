@@ -17,5 +17,5 @@
     "vite": "^6.3.5"
   }
   ,
-  "packageManager": "pnpm@^8.0.0"
+  "packageManager": "pnpm@8.0.0"
 }
