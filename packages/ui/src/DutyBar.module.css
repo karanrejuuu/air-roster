@@ -1,0 +1,29 @@
+.wrap {
+  display: grid;
+  gap: 5px;
+}
+
+.label {
+  color: var(--text-tertiary);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.5;
+  text-align: right;
+}
+
+.track {
+  background: var(--bg-active);
+  border-radius: 2px;
+  height: 3px;
+  overflow: hidden;
+}
+
+.fill {
+  border-radius: inherit;
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+.ok { background: var(--status-ok); }
+.warn { background: var(--status-warn); }
+.danger { background: var(--status-danger); }

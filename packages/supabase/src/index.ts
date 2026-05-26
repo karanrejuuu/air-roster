@@ -1,0 +1,6 @@
+export { AuthProvider, routeForRole, useAuth, type AuthContextValue } from './AuthContext'
+export { supabase } from './client'
+export * from './conflictEngine'
+export * from './demoData'
+export * from './queries'
+export * from './types'

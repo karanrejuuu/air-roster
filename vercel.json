@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "projects": [
+    { "name": "airroster-landing", "directory": "apps/landing" },
+    { "name": "airroster-ops", "directory": "apps/ops-portal" },
+    { "name": "airroster-crew", "directory": "apps/crew-app" }
+  ]
+}

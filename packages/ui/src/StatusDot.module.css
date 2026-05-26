@@ -1,0 +1,11 @@
+.dot {
+  border-radius: 999px;
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+}
+
+.green { background: var(--status-ok); }
+.amber { background: var(--status-warn); }
+.red { background: var(--status-danger); }
+.gray { background: var(--text-tertiary); }

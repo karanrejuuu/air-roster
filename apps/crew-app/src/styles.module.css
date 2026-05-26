@@ -1,0 +1,538 @@
+.shell {
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: var(--bg-surface);
+  border-right: 1px solid var(--border-subtle);
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 220px;
+}
+
+.brand {
+  display: grid;
+  gap: 3px;
+  padding: 28px 24px 22px;
+}
+
+.brand span {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}
+
+.brand small,
+.navItem,
+.activeNav,
+.profileChip small {
+  color: var(--text-tertiary);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.navItem,
+.activeNav {
+  align-items: center;
+  border-left: 1px solid transparent;
+  color: var(--text-secondary);
+  display: flex;
+  gap: 10px;
+  padding: 10px 24px;
+}
+
+.activeNav {
+  border-left-color: var(--white);
+  color: var(--text-primary);
+}
+
+.profileChip {
+  align-items: center;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+  padding: 16px 24px;
+}
+
+.profileChip div {
+  display: grid;
+  font-size: 13px;
+}
+
+.main {
+  margin-left: 220px;
+  min-height: 100vh;
+}
+
+.centerState {
+  align-items: center;
+  color: var(--text-secondary);
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  text-align: center;
+}
+
+.centerState h1 {
+  color: var(--text-primary);
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.home,
+.page,
+.profilePage {
+  padding: 40px 48px;
+}
+
+.home h1,
+.profilePage h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  margin: 0 0 8px;
+}
+
+.page h1 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin: 6px 0 24px;
+}
+
+.home p,
+.profilePage p {
+  color: var(--text-tertiary);
+  font-size: 13px;
+  margin: 0 0 28px;
+}
+
+.flightCards {
+  display: flex;
+  gap: 16px;
+  overflow: auto;
+}
+
+.flightCard {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-left-color: var(--border-strong);
+  border-radius: 8px;
+  color: inherit;
+  cursor: pointer;
+  display: grid;
+  flex: 0 0 260px;
+  gap: 8px;
+  padding: 20px 24px;
+  text-align: left;
+}
+
+.flightCard span {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+}
+
+.flightCard small {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.flightCard strong {
+  font-size: 32px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.flightCard em {
+  color: var(--text-tertiary);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.weekList {
+  display: grid;
+  gap: 0;
+  margin-top: 40px;
+  max-width: 760px;
+}
+
+.weekList > span {
+  margin-bottom: 10px;
+}
+
+.weekList div {
+  align-items: center;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.weekList span {
+  color: var(--text-tertiary);
+  font-size: 13px;
+}
+
+.weekList strong {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.briefingList {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+}
+
+.briefingList button {
+  align-items: center;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: grid;
+  font-size: 13px;
+  grid-template-columns: 100px 1fr auto;
+  padding: 16px 20px;
+  text-align: left;
+}
+
+.briefingList span {
+  color: var(--text-secondary);
+}
+
+.briefingList strong {
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+
+.briefingHero {
+  align-items: center;
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border-subtle);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 40px 48px;
+}
+
+.briefingHero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  margin: 8px 0 4px;
+}
+
+.briefingHero p {
+  color: var(--text-secondary);
+  font-size: 18px;
+  margin: 0 0 4px;
+}
+
+.briefingHero small {
+  color: var(--text-tertiary);
+  display: block;
+  font-size: 13px;
+}
+
+.countdown {
+  display: grid;
+  gap: 4px;
+  text-align: right;
+}
+
+.countdown span {
+  color: var(--text-tertiary);
+  font-size: 11px;
+}
+
+.countdown strong {
+  font-size: 32px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 300;
+}
+
+.briefingSection {
+  border-top: 1px solid var(--border-subtle);
+  display: grid;
+  gap: 20px;
+  padding: 32px 48px;
+}
+
+.keyGrid {
+  display: grid;
+  gap: 12px 40px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+}
+
+.keyGrid div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.keyGrid dt {
+  color: var(--text-tertiary);
+  font-size: 13px;
+}
+
+.keyGrid dd {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.routeMap {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  height: 340px;
+  max-width: 920px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.mapBase {
+  fill: var(--bg-elevated);
+}
+
+.mapGrid {
+  fill: url("#mapGrid");
+}
+
+.routeMap pattern path {
+  fill: none;
+  stroke: rgba(255,255,255,0.04);
+  stroke-width: 1;
+}
+
+.landMass {
+  fill: rgba(255,255,255,0.035);
+  stroke: var(--border-default);
+  stroke-width: 1;
+}
+
+.coastLine {
+  fill: none;
+  stroke: rgba(255,255,255,0.08);
+  stroke-dasharray: 6 8;
+  stroke-width: 1;
+}
+
+.routeTrace {
+  fill: none;
+  stroke: var(--text-primary);
+  stroke-linecap: round;
+  stroke-width: 1.5;
+}
+
+.routeGlow {
+  animation: routeDash 4s linear infinite;
+  fill: none;
+  stroke: var(--text-secondary);
+  stroke-dasharray: 3 10;
+  stroke-linecap: round;
+  stroke-width: 4;
+}
+
+.routeMap marker path {
+  fill: var(--text-primary);
+}
+
+.planeMarker path {
+  fill: var(--text-primary);
+}
+
+.airportPin circle:first-child {
+  fill: var(--bg-base);
+  stroke: var(--text-primary);
+  stroke-width: 1;
+}
+
+.airportPin circle:nth-child(2) {
+  fill: var(--text-primary);
+}
+
+.airportPin line {
+  stroke: var(--border-strong);
+  stroke-width: 1;
+}
+
+.airportPin text,
+.routeMeta text {
+  fill: var(--text-primary);
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.airportPin .pinCity,
+.routeMeta text:nth-child(2) {
+  fill: var(--text-tertiary);
+  font-size: 10px;
+  font-weight: 400;
+}
+
+@keyframes routeDash {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -52; }
+}
+
+.weatherGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.weatherCard {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  display: grid;
+  gap: 6px;
+  padding: 20px 24px;
+}
+
+.weatherCard div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weatherCard svg {
+  fill: none;
+  height: 32px;
+  stroke: var(--text-secondary);
+  stroke-width: 1;
+  width: 32px;
+}
+
+.weatherCard span {
+  font-size: 28px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 300;
+}
+
+.weatherCard p,
+.weatherCard small,
+.discreet {
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin: 0;
+}
+
+.weatherCard small {
+  color: var(--text-tertiary);
+}
+
+.crewGroups {
+  display: grid;
+  gap: 24px;
+}
+
+.crewWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.crewWrap span {
+  align-items: center;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+}
+
+.crewWrap strong {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.crewWrap small {
+  color: var(--text-tertiary);
+  font-size: 11px;
+}
+
+.leaveForm {
+  align-items: end;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-bottom: 28px;
+}
+
+.selectLabel {
+  color: var(--text-secondary);
+  display: grid;
+  font-size: 12px;
+  gap: 7px;
+}
+
+.selectLabel select {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: 6px;
+  color: var(--text-primary);
+  height: 38px;
+  padding: 0 12px;
+}
+
+.table {
+  border-collapse: collapse;
+  font-size: 13px;
+  max-width: 840px;
+  width: 100%;
+}
+
+.table td {
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 12px 10px;
+}
+
+.profilePage {
+  display: grid;
+  gap: 18px;
+  max-width: 520px;
+}
+
+.profilePage strong {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    position: static;
+    width: auto;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  .leaveForm,
+  .keyGrid,
+  .weatherGrid,
+  .briefingHero {
+    grid-template-columns: 1fr;
+  }
+}
