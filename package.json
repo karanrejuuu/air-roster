@@ -6,6 +6,7 @@
     "dev:landing": "pnpm --filter landing dev",
     "dev:ops": "pnpm --filter ops-portal dev",
     "dev:crew": "pnpm --filter crew-app dev",
+    "build": "pnpm -r build",
     "build:all": "pnpm -r build",
     "typecheck": "pnpm -r typecheck"
   },
@@ -15,4 +16,6 @@
     "typescript": "^5.8.3",
     "vite": "^6.3.5"
   }
+  ,
+  "packageManager": "pnpm@^8.0.0"
 }

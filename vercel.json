@@ -6,19 +6,19 @@
       {
         "name": "airroster-landing",
         "directory": "apps/landing",
-        "buildCommand": "pnpm -w --filter landing build",
+        "buildCommand": "pnpm build",
         "outputDirectory": "dist"
       },
       {
         "name": "airroster-ops",
         "directory": "apps/ops-portal",
-        "buildCommand": "pnpm -w --filter ops-portal build",
+        "buildCommand": "pnpm build",
         "outputDirectory": "dist"
       },
       {
         "name": "airroster-crew",
         "directory": "apps/crew-app",
-        "buildCommand": "pnpm -w --filter crew-app build",
+        "buildCommand": "pnpm build",
         "outputDirectory": "dist"
       }
     ]
