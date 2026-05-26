@@ -1,8 +1,25 @@
 {
-  "version": 2,
-  "projects": [
-    { "name": "airroster-landing", "directory": "apps/landing" },
-    { "name": "airroster-ops", "directory": "apps/ops-portal" },
-    { "name": "airroster-crew", "directory": "apps/crew-app" }
-  ]
-}
+  {
+    "version": 2,
+    "installCommand": "pnpm install",
+    "projects": [
+      {
+        "name": "airroster-landing",
+        "directory": "apps/landing",
+        "buildCommand": "pnpm -w --filter landing build",
+        "outputDirectory": "dist"
+      },
+      {
+        "name": "airroster-ops",
+        "directory": "apps/ops-portal",
+        "buildCommand": "pnpm -w --filter ops-portal build",
+        "outputDirectory": "dist"
+      },
+      {
+        "name": "airroster-crew",
+        "directory": "apps/crew-app",
+        "buildCommand": "pnpm -w --filter crew-app build",
+        "outputDirectory": "dist"
+      }
+    ]
+  }
